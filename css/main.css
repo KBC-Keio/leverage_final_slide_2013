@@ -1,0 +1,219 @@
+/*
+ * Global settings
+ */
+.step{
+    position: relative;
+    width: 860px;
+    padding: 20px;
+    margin: 20px auto;
+}
+.step>*{
+    margin: 0;
+}
+.step.fixed{
+    height: 645px;
+}
+
+h1,h2,h3,h4,p{
+    margin: 0;
+    font-weight: normal;
+}
+
+/*
+ * Overview
+ */
+#overview{
+    display: none;
+}
+.impress-on-overview .step{
+    opacity: 1;
+    cursor: pointer;
+}
+
+/*
+ * Title
+ */
+#title{
+    background-color: #fff;
+    position: relative;
+}
+#title>img{
+    width: 160px;
+}
+#title>div{
+    display: inline-block;
+    margin-left: 30px;
+}
+#title p{
+    font-size: 35pt;
+    font-family: "Arabic Typesetting", serif;
+    margin: 0;
+}
+#title h1{
+    font-size: 98pt;
+    font-family: "Arabic Typesetting", serif;
+}
+@-webkit-keyframes shine{
+    0%{
+        background-position: -210px 0;
+    }
+    10%{
+        background-position: 750px 0;
+    }
+    100%{
+        background-position: 750px 0;
+    }
+}
+#title.active>div.shine{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/shine.png);
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-position: -210px 0;
+    -webkit-animation: shine 6s ease 3s infinite;
+    -moz-animation: shine 6s ease 3s infinite;
+    -ms-animation: shine 6s ease 3s infinite;
+    -o-animation: shine 6s ease 3s infinite;
+    animation: shine 6s ease 3s infinite;
+}
+
+/*
+ * Time line
+ */
+#timeline{
+    display: table;
+    table-layout: fixed;
+}
+#timeline>div{
+    display: table-cell;
+}
+#timeline div.contents{
+    border: 1px solid #444;
+    border-radius: 10px;
+    width: 90%;
+    margin: 20px;
+}
+
+/*
+ * Supporter
+ */
+.supporter{
+    top: 3500px;
+    padding-top: 200px;
+    height: 1685px;
+    -webkit-transition: top 1s ease 0;
+}
+.supporter.active{
+    top: 0;
+}
+.supporter.past{
+    top: 0;
+}
+.supporter>.blur{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.8;
+    box-shadow: -3px -3px 8px #999, 3px 3px 8px #999;
+}
+.supporter>table{
+    position: absolute;
+    table-layout: fixed;
+    width: 100%;
+    margin: 0;
+}
+.supporter>table img{
+    max-width: 130px;
+    max-height: 90px;
+}
+.supporter>table td{
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+.supporter>table h2{
+    font-size: 30pt;
+}
+.supporter>table p{
+    font-size: 18pt;
+}
+#sponsor>table{
+    top: 550px;
+}
+#backing>table{
+    top: 650px;
+}
+
+/*
+ * Lecture
+ */
+.session>h2{
+    font-size: 30pt;
+    height: 5%;
+}
+.session>div{
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 95%;
+}
+.session>div>div{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.session>div>div>h2{
+    font-size: 25pt;
+    margin-bottom: 40px;
+}
+.session>div>div>h4{
+    font-size: 20pt;
+    margin-bottom: 10px;
+}
+.session>div>div>p{
+    font-size: 12pt;
+    text-align: left;
+}
+.session>div>div>img{
+    width: 250px;
+}
+
+/*
+ * Conversation
+ */
+#conversation>h2>span{
+    color: red;
+    margin: 0 10px;
+    font-size: 40pt;
+}
+#xica-logo{
+    text-align: center;
+    padding: 20px 40px;
+}
+#xica-logo>img{
+    width: 280px;
+}
+img.xica-member{
+    width: 140px;
+    margin: 20px;
+    border-radius: 7px;
+}
+
+
+/*
+#conversation{
+    top: -3000px;
+    height: 645px;
+    background-image: url(../img/iron_back.jpg);
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    -webkit-transition: top 1s ease 1s;
+}
+#conversation.active{
+    top: 0;
+}
+    */
