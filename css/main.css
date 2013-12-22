@@ -59,23 +59,23 @@ h1,h2,h3,h4,p{
 /*
  * Title
  */
-#title{
+.title{
     background-color: #fff;
     position: relative;
 }
-#title>img{
+.title>img{
     width: 160px;
 }
-#title>div{
+.title>div{
     display: inline-block;
     margin-left: 30px;
 }
-#title p{
+.title p{
     font-size: 35pt;
     font-family: "Arabic Typesetting", serif;
     margin: 0;
 }
-#title h1{
+.title h1{
     font-size: 98pt;
     font-family: "Arabic Typesetting", serif;
 }
@@ -90,7 +90,7 @@ h1,h2,h3,h4,p{
         background-position: 750px 0;
     }
 }
-#title.active>div.shine{
+.title.active>div.shine{
     width: 100%;
     height: 100%;
     background-image: url(../img/shine.png);
@@ -144,25 +144,40 @@ h1,h2,h3,h4,p{
     text-align: right;
     font-size: 35pt;
 }
+#timeline div.contents>span{
+    display: block;
+    font-size: 20pt;
+    color: red;
+    width: 100%;
+    text-align: center;
+}
+#timeline img{
+    border-radius: 5px;
+    opacity: 0.9;
+}
 #timeline img.xica{
     width: 100px;
-    margin: 40px 9px 50px 9px;
-    border-radius: 5px;
+    margin: 20px 9px 25px 9px;
+}
+#timeline img.kokuryo{
+    width: 100px;
+    margin: 20px 0 20px 75px;
 }
 #timeline img.team{
     width: 100px;
     margin: 7px 9px;
-    border-radius: 5px;
 }
 #timeline img.demo{
     width: 140px;
     margin: 10px 45px;
-    border-radius: 5px;
 }
 #timeline img.hub{
     width: 150px;
     margin: 3px 50px;
-    border-radius: 5px;
+}
+#timeline img.award{
+    width: 140px;
+    margin: 32px 45px;
 }
 
 /*
@@ -270,17 +285,135 @@ img.xica-member{
     border-radius: 7px;
 }
 
+/*
+ * Presentation
+ */
+#presentation>ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+#presentation>ul>li{
+    margin: 0 30px;
+    float: left;
+}
+#presentation>ul>li>div{
+    background: #ddd;
+    padding: 40px 0px 40px 25px;
+    color: #444;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    width: 201px;
+    height: 550px;
+    position: relative;
+}
+#presentation>ul>li>div::before,
+#presentation>ul>li>div::after{
+    content:'';
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    background: #ddd;
+    -webkit-transform: skew(-4deg);
+    z-index: -1;
+}
+#presentation>ul>li>div::before{
+    left: -25px;
+    border-radius: 5px 0 0 5px;
+}
+#presentation>ul>li>div::after{
+    right: -25px;
+    border-radius: 0 5px 5px 0;
+}
+#presentation>ul>li>div>h2{
+    text-align: center;
+    font-size: 22pt;
+}
+#presentation>ul>li>div>div{
+    margin: 120px 0 90px 0;
+}
+#presentation>ul>li>div>div>img{
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+#presentation>ul>li>div>p{
+    color: #888;
+    font-family: "Helvetica Neue", sans-serif;
+    text-align: right;
+    font-size: 35pt;
+}
+#presentation>.triangle{
+    position: absolute;
+    border-top: 70px solid transparent;
+    border-bottom: 70px solid transparent;
+    border-left: 55px solid #444;
+}
+#presentation>#triangle1{
+    top: 220px;
+    left: 295px;
+}
+#presentation>#triangle2{
+    top: 220px;
+    left: 580px;
+}
 
 /*
-#conversation{
-    top: -3000px;
-    height: 645px;
-    background-image: url(../img/iron_back.jpg);
-    border-radius: 30px;
+ * Award
+ */
+#award>table{
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+}
+#award>table td{
+    background-image: url(../img/medal_frame.png);
     background-repeat: no-repeat;
-    -webkit-transition: top 1s ease 1s;
+    background-position: center center;
+    background-size: contain;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20pt;
+    height: 33%;
+    text-shadow: -2px -2px #fff, 2px -2px #fff, -2px 2px #fff, 2px 2px #fff;
 }
-#conversation.active{
-    top: 0;
+
+/*
+ * Team
+ */
+#team>table{
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
 }
-    */
+#team>table td{
+    text-align: center;
+    vertical-align: middle;
+}
+#team>table td>img{
+    width: 200px;
+    border-radius: 7px;
+}
+#team>table td>p{
+    color: #333;
+    margin-top: 20px;
+    font-size: 18pt;
+}
+
+.team{
+    text-align: center;
+}
+.team>img{
+    width: 400px;
+    border-radius: 7px;
+}
+.team>h2{
+    font-size: 40pt;
+    margin-bottom: 50px;
+}
+.team>p{
+    margin-top: 30px;
+    font-size: 24pt;
+}
