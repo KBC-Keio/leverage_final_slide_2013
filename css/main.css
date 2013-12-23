@@ -422,4 +422,25 @@ img.xica-member{
     background-image: url(../img/keii.png);
     background-repeat: no-repeat;
     background-size: contain;
+    position: relative;
+}
+.keii>.keii-inner{
+    width: 250px;
+    background-color: #ddd;
+    border-radius: 7px;
+    position: absolute;
+    padding: 20px;
+    font-size: 19px;
+}
+.keii>.keii-inner.step1{
+    top: 10px;
+    left: 30px;
+}
+.keii>.keii-inner.step2{
+    top: 420px;
+    left: 300px;
+}
+.keii>.keii-inner.step3{
+    top: 50px;
+    left: 470px;
 }
