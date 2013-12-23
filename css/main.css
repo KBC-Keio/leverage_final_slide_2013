@@ -146,7 +146,7 @@ h1,h2,h3,h4,p{
 }
 #timeline div.contents>span{
     display: block;
-    font-size: 20pt;
+    font-size: 40pt;
     color: red;
     width: 100%;
     text-align: center;
@@ -157,11 +157,11 @@ h1,h2,h3,h4,p{
 }
 #timeline img.xica{
     width: 100px;
-    margin: 20px 9px 25px 9px;
+    margin: 20px 9px 10px 9px;
 }
 #timeline img.kokuryo{
     width: 100px;
-    margin: 20px 0 20px 75px;
+    margin: 6px 0 10px 75px;
 }
 #timeline img.team{
     width: 100px;
@@ -416,4 +416,10 @@ img.xica-member{
 .team>p{
     margin-top: 30px;
     font-size: 24pt;
+}
+
+.keii{
+    background-image: url(../img/keii.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
