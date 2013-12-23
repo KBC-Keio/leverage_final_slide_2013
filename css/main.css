@@ -363,12 +363,12 @@ img.xica-member{
 /*
  * Award
  */
-#award>table{
+.award>table{
     table-layout: fixed;
     width: 100%;
     height: 100%;
 }
-#award>table td{
+.award>table td{
     background-image: url(../img/medal_frame.png);
     background-repeat: no-repeat;
     background-position: center center;
@@ -443,4 +443,38 @@ img.xica-member{
 .keii>.keii-inner.step3{
     top: 50px;
     left: 470px;
+}
+
+.happyou{
+    position: relative;
+}
+.happyou>h2{
+    text-align: center;
+    font-size: 28pt;
+}
+.happyou>div.award{
+    height: 100%;
+    opacity: 0.6;
+}
+.happyou>div.counter{
+    position: absolute;
+    top: 200px;
+    left: 190px;
+    width: 400px;
+    background-color: #fff;
+    padding: 60px;
+    font-size: 45pt;
+    text-align: center;
+    border-radius: 14px;
+    opacity: 0.85;
+    box-shadow: -3px -3px 8px #999, 3px 3px 8px #999;
+}
+.happyou>div.counter>h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.happyou>div.counter>h3{
+    text-align: center;
+    font-size: 30px;
 }
